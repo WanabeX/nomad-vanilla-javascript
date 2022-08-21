@@ -1,14 +1,22 @@
-// 이미지 목록
-const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+const body = document.querySelector("body");
 
-// 랜덤 숫자 생성
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+// 이미지 개수 지정
+const IMG_NUMBER = 5;
 
-// img element 추가
-const bgImage = document.createElement("img");
+//랜덤 숫자 생성
+const getRandomNumber = Math.floor(Math.random() * IMG_NUMBER);
 
-// img element에 src추가
-bgImage.src = `img/${chosenImage}`;
+//이미지 불러오기
+function paintImage(imgNumber) {
+    const backgroundImages = `url('img/${imgNumber + 1}.jpg')`;
+    body.style.backgroundImage = backgroundImages;
+    body.classList.add('setBackround');
+}
 
-// img를 html body태그에 추가
-document.body.appendChild(bgImage);
+//함수 실행
+function init() {
+    const getNumber = getRandomNumber;
+    paintImage(getNumber);
+}
+
+init();
