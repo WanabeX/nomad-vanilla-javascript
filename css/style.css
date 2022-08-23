@@ -1,28 +1,21 @@
 .hidden {
-    display: none;
+  display: none;
 }
 
 .setBackround {
-    background-size: cover;
+  background-size: cover;
 }
 
-body{
-    color : white;
-    text-align: center;
-    padding: 225px;
-}   
-
-#greeting{
-    font-size : 60px;
-    margin: 0;
+ul li.checked {
+  text-decoration: line-through;
+  color: gray;
 }
 
-#clock{
-    font-size : 40px;
-    margin: 20px;
+.list-align {
+  padding-left: 10px;
+  list-style: none;
 }
 
-#quote{
-    margin-top: 100px;
+.list-padding {
+  margin-left: 5px;
 }
-
