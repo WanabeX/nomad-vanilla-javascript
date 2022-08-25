@@ -14,8 +14,18 @@ ul li.checked {
 .list-align {
   padding-left: 10px;
   list-style: none;
+  margin:0;
 }
 
 .list-padding {
   margin-left: 5px;
+}
+
+#error-msg {
+  margin: 0;
+  color: red;
+}
+
+div p {
+ margin: 0;
 }
